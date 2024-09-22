@@ -1,9 +1,23 @@
 <mvc:View controllerName="project1.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-
-    hi
-        <content />
+        <content>
+            <!-- Ajout de la liste des rapports -->
+            <List
+                id="reportList"
+                items="{/reports}" 
+                headerText="Liste des Rapports">
+                
+                <!-- Modèle d'élément de la liste -->
+                <StandardListItem id="_IDGenStandardListItem"
+                    title="{reportName}" 
+                    description="{reportDescription}" 
+                    type="Navigation"
+                    press="onReportSelected" />  <!-- Fonction press pour gérer la sélection -->
+                
+            </List>
+        </content>
     </Page>
 </mvc:View>
