@@ -11,7 +11,7 @@ sap.ui.define([
             var oData = {
                 reports: [
                     { reportName: "Rapport 1", reportDescription: "Description du rapport 1" },
-                    { reportName: "Rapport 2", reportDescription: "Description du rapport 2" },
+                    { reportName: "Rapport 22", reportDescription: "Description du rapport 2" },
                     { reportName: "Rapport 3", reportDescription: "Description du rapport 3" },
                     { reportName: "Rapport 4", reportDescription: "Description du rapport 4" },
                 ]
