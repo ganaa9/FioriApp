@@ -1,17 +1,21 @@
 module.exports = function(config) {
   config.set({
-    frameworks: ['jasmine'],
-    browsers: ['ChromeHeadless'],
+    frameworks: ['jasmine', 'requirejs'],
     files: [
-      'path/to/tests/**/*.js',
-      'path/to/source/files/**/*.js'
+      'test/unit/**/*.js',
+      { pattern: 'webapp/**/*.js', included: false }
     ],
-    reporters: ['progress'],
-    port: 9876,
-    colors: true,
-    logLevel: config.LOG_INFO,
-    autoWatch: true,
+    reporters: ['progress', 'coverage', 'junit'],
+    browsers: ['Chrome'],
     singleRun: true,
-    concurrency: Infinity
+    coverageReporter: {
+      type: 'html',
+      dir: 'coverage/'
+    },
+    junitReporter: {
+      outputDir: 'test-results',
+      outputFile: 'junit-results.xml',
+      useBrowserName: false
+    }
   });
 };
