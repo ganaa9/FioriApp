@@ -7,7 +7,7 @@ module.exports = function(config) {
   ],
   
     reporters: ['progress', 'coverage', 'junit'],
-    browsers: ['Chrome'],
+    browsers: ['Microsoft Edge'],
     singleRun: true,
     coverageReporter: {
       type: 'html',
