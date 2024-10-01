@@ -1,26 +1,17 @@
 module.exports = function(config) {
   config.set({
-    basePath: '',
-    frameworks: ['qunit'],
+    frameworks: ['jasmine'],
+    browsers: ['ChromeHeadless'],
     files: [
-      'webapp/test/unit/**/*.js',
-      'webapp/**/*.js'
+      'path/to/tests/**/*.js',
+      'path/to/source/files/**/*.js'
     ],
-    exclude: [],
-    preprocessors: {
-      'webapp/**/*.js': ['coverage']
-    },
-    reporters: ['progress', 'coverage'],
+    reporters: ['progress'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
-    singleRun: false,
-    concurrency: Infinity,
-    coverageReporter: {
-      type: 'html',
-      dir: 'coverage/'
-    }
+    singleRun: true,
+    concurrency: Infinity
   });
 };
