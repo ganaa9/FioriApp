@@ -7,7 +7,7 @@ module.exports = function(config) {
 ],
 
     reporters: ['progress', 'coverage', 'junit'],
-    browsers: ['ChromeHeadless'],
+    browsers: ['chrome'],
 
     singleRun: true,
     coverageReporter: {
