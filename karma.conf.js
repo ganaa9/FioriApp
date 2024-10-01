@@ -2,9 +2,10 @@ module.exports = function(config) {
   config.set({
     frameworks: ['jasmine', 'requirejs'],
     files: [
-      'test/unit/**/*.js',
-      { pattern: 'webapp/**/*.js', included: false }
-    ],
+      // Your other file patterns...
+      'test/unit/**/*.js' // Adjust if necessary
+  ],
+  
     reporters: ['progress', 'coverage', 'junit'],
     browsers: ['Chrome'],
     singleRun: true,
