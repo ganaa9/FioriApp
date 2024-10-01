@@ -1,13 +1,13 @@
 module.exports = function(config) {
   config.set({
     frameworks: ['jasmine', 'requirejs'],
-    files: [
-      // Your other file patterns...
-      'test/unit/**/*.js' // Adjust if necessary
-  ],
-  
+   files: [
+    // Your other file patterns...
+    'test/unit/**/*.js' // Adjust if necessary
+],
+
     reporters: ['progress', 'coverage', 'junit'],
-    browsers: ['Microsoft Edge'],
+    browsers: ['Chrome'],
     singleRun: true,
     coverageReporter: {
       type: 'html',
