@@ -303,6 +303,7 @@
     "opts": "^2.0.2",
     "ora": "^5.4.1",
     "os-tmpdir": "^1.0.2",
+    "package.json": "^0.0.0",
     "parent-module": "^1.0.1",
     "parseurl": "^1.3.3",
     "path-is-absolute": "^1.0.1",
