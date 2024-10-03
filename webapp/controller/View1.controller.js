@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
     "use strict";
 
-    return Controller.extend("project1.controller.View1", {
+    return Controller.extend("FIORIAPP.controller.View1", {
 
         onInit: function () {
             // Exemple de données pour la liste de rapports
