@@ -8,7 +8,7 @@
 |**Template Used**<br>simple|
 |**Service Type**<br>None|
 |**Service URL**<br>N/A
-|**Module Name**<br>project1|
+|**Module Name**<br>FIORIAPP|
 |**Application Title**<br>App Title|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
@@ -17,7 +17,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## project1
+## FIORIAPP
 
 An SAP Fiori application.
 
